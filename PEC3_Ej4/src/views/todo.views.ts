@@ -150,7 +150,7 @@ class TodoView {
 
   bindToggleTodo(handler: Function) {
     this.todoList.addEventListener('change', event => {
-      if (event.target instanceof HTMLFormElement) {
+      if (event.target instanceof HTMLInputElement) {
         if (
           event.target.type === 'checkbox' &&
           event.target.parentElement !== null
