@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2015", // Esta opción básicamente indica la versión de JavaScript a la que queremos que se compile
+    "module": "commonjs", // Es el módulo usado para cargar NodeJS
+    "outDir": "./dist", // Es el directorio donde se guardaran los ficheros .js generados al compilar
+    "rootDir": "./src", // Es el directorio de origen de los ficheros .ts a compilar
+    "strict": true, // En verdadero, permite una amplia gama de comportamientos de verificación de tipos que dan como resultado mayores garantías de corrección del programa
+    "incremental": true, // Guarda información sobre el gráfico del proyecto de la última compilación en archivos almacenados en el disco
+    "tsBuildInfoFile": "./buildcache" // Es la carpeta donde se guarda la información del proyecto mencionada en la línea anterior
+  }
+}
