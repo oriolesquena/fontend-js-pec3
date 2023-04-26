@@ -1,12 +1,11 @@
-Sustituye /***/ por las instrucciones adecuadas que cumplan las operaciones 
-y salidas indicadas en los comentarios.
-
-
 interface Plane{
     model:string,
     npassengers:number
 }
-/***/
+
+type HangarHash = {
+    [key: string]: any;
+  };
 
 let myHangar:HangarHash = {}
 
@@ -23,3 +22,10 @@ myHangar['H789']={
  * 123Z:airbus(200)
  * H789:boeing(151)
  */
+
+const myHangarKeys = Object.keys(myHangar);
+const myHangarValues = Object.values(myHangar);
+
+myHangarKeys.map((hash, index) => {
+    console.log(hash + ':' + myHangarValues[index].model + '(' + myHangarValues[index].npassengers + ')');
+});
